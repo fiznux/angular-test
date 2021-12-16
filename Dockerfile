@@ -11,4 +11,5 @@ RUN ionic build --prod
 EXPOSE 80/tcp
 
 FROM nginx:1.17.1-alpine
-COPY /ulventech/www /usr/share/nginx/html
+RUN rm -rf /usr/share/nginx/html/*
+COPY --from=build /app/www /usr/share/nginx/html
