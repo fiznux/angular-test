@@ -1,6 +1,8 @@
 Ulventech Angular Test
 ==================================
 
+I build this angular app based with ionic framework.
+
 Installation of the application on your local machine
 ===================================================== 
 
