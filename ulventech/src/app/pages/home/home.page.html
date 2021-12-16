@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <ion-card class="main">
+    <ion-card-header>Dynamic Form</ion-card-header>
+    <ion-card-content>
+      <ng-container *ngIf="isLoaded;else loading">
+        <app-dynamic-form-builder [fields]="responses.data" [form]="form"></app-dynamic-form-builder>
+      </ng-container>
+      <ng-template #loading>
+        <app-skeleton></app-skeleton>
+      </ng-template>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="ion-no-margin">
+    <ion-card-content>
+      <ion-button (click)="submit()" [disabled]="!isLoaded || isSubmit" [size]="'block'" color="warning" shape="round">
+        <ng-container *ngIf="isSubmit;else submitText">
+          <ion-spinner color="dark" slot="end"></ion-spinner>
+        </ng-container>
+        <ng-template #submitText>
+          SUBMIT
+        </ng-template>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

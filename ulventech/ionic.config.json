@@ -1,0 +1,7 @@
+{
+  "name": "ulventech",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

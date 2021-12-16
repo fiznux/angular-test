@@ -1,0 +1,11 @@
+ion-skeleton-text {
+  height: 20px;
+
+  &.shorter {
+    width: 70%;
+  }
+
+  &.shortest {
+    width: 40%;
+  }
+}

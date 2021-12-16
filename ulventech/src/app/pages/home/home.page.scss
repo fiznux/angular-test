@@ -1,0 +1,42 @@
+ion-content {
+  --background: linear-gradient(180deg, var(--ion-color-warning) 400px, #fff 0%);
+}
+
+ion-title {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+ion-card-header {
+  font-size: 20px;
+  border-bottom: 1px dashed grey;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+ion-button {
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 769px) {
+  ion-card, ion-footer ion-toolbar {
+    margin: auto;
+    max-width: 500px;
+  }
+
+  ion-card.main {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+}
+
+ion-footer.transparent {
+  padding-bottom: 8px;
+  ion-toolbar {
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    padding-bottom: 0;
+  }
+}
