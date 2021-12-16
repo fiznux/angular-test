@@ -4,10 +4,11 @@ Ulventech Angular Test
 Installation of the application on your local machine
 ===================================================== 
 
-You need to clone the projet on your machine by typing the following command:
+You need to clone the project on your machine by typing the following command:
 
 `git clone https://github.com/fiznux/angular-test.git`
 
+Then do installation with these choices :
 
 1. With Docker
 
